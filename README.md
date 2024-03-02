@@ -210,7 +210,7 @@ After using this generator, your new project (the directory created) will contai
 
 ### 0.2.1
 
-* Fix frontend hijacking /docs in development. Using latest https://github.com/tiangolo/node-frontend with custom Nginx configs in frontend. <a href="https://github.com/khulnasoft/full-stack-readyapi-couchbase/pull/14" target="_blank">PR #14</a>.
+* Fix frontend hijacking /docs in development. Using latest https://github.com/khulnasoft-lab/node-frontend with custom Nginx configs in frontend. <a href="https://github.com/khulnasoft/full-stack-readyapi-couchbase/pull/14" target="_blank">PR #14</a>.
 
 * Update generated README. Minor typos.
 
