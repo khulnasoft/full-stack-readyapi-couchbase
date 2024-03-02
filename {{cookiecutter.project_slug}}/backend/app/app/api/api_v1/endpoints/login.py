@@ -1,7 +1,7 @@
 from datetime import timedelta
 
-from fastapi import APIRouter, Body, Depends, HTTPException
-from fastapi.security import OAuth2PasswordRequestForm
+from readyapi import APIRouter, Body, Depends, HTTPException
+from readyapi.security import OAuth2PasswordRequestForm
 
 from app import crud
 from app.api.utils.security import get_current_user

@@ -1,4 +1,4 @@
-FROM tiangolo/uvicorn-gunicorn-fastapi:python3.6
+FROM khulnasoft/uvicorn-gunicorn-readyapi:python3.6
 
 # Dependencies for Couchbase
 RUN wget -O - http://packages.couchbase.com/ubuntu/couchbase.key | apt-key add - && \
@@ -13,7 +13,7 @@ RUN pip install \
     requests \
     couchbase \
     emails \
-    "fastapi>=0.16.0" \
+    "readyapi>=0.16.0" \
     uvicorn \
     gunicorn \
     pyjwt \

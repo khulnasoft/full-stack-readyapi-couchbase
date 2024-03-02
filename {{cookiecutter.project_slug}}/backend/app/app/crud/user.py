@@ -1,7 +1,7 @@
 import requests
 from couchbase.bucket import Bucket
 from couchbase.n1ql import CONSISTENCY_REQUEST, N1QLQuery
-from fastapi.encoders import jsonable_encoder
+from readyapi.encoders import jsonable_encoder
 
 from app.core import config
 from app.core.security import get_password_hash, verify_password

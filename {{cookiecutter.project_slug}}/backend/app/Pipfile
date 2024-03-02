@@ -14,7 +14,7 @@ pytest = "*"
 vulture = "*"
 
 [packages]
-fastapi = "*"
+readyapi = "*"
 uvicorn = "*"
 pyjwt = "*"
 python-multipart = "*"

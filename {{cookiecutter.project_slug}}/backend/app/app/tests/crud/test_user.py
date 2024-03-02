@@ -1,4 +1,4 @@
-from fastapi.encoders import jsonable_encoder
+from readyapi.encoders import jsonable_encoder
 
 from app import crud
 from app.db.database import get_default_bucket

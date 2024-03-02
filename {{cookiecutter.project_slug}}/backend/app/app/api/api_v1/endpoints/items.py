@@ -1,6 +1,6 @@
 from typing import List
 
-from fastapi import APIRouter, Depends, HTTPException
+from readyapi import APIRouter, Depends, HTTPException
 
 from app import crud
 from app.api.utils.security import get_current_active_user

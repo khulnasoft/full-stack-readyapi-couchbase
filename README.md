@@ -4,13 +4,13 @@ I'm currently not actively using Couchbase nor this generator for any project.
 
 You might still find some internal pieces of code useful for your own use cases, but I won't be able to fix bugs and add features.
 
-If you are starting a new project from scratch, check the alternatives at the [FastAPI docs: Project Generation](https://fastapi.tiangolo.com/project-generation/).
+If you are starting a new project from scratch, check the alternatives at the [ReadyAPI docs: Project Generation](https://readyapi.khulnasoft.com/project-generation/).
 
 You are still free to use this project if you want to, you might still find some internal pieces of code useful for your own use case. And if you already have a project generated with it that's fine as well (and you probably already updated it to suit your needs).
 
-# Full Stack FastAPI Couchbase - project generator
+# Full Stack ReadyAPI Couchbase - project generator
 
-[![Build Status](https://travis-ci.org/tiangolo/full-stack-fastapi-couchbase.svg?branch=master)](https://travis-ci.org/tiangolo/full-stack-fastapi-couchbase)
+[![Build Status](https://travis-ci.org/khulnasoft/full-stack-readyapi-couchbase.svg?branch=master)](https://travis-ci.org/khulnasoft/full-stack-readyapi-couchbase)
 
 ### To have in mind
 
@@ -44,7 +44,7 @@ As it uses N1QL, a flavor of SQL, and there's no easy integration with Python, y
 
 Generate a backend and frontend stack using Python, including interactive API documentation.
 
-[![Screenshot](https://fastapi.tiangolo.com/img/index/index-03-swagger-02.png)](https://github.com/tiangolo/full-stack-fastapi-couchbase)
+[![Screenshot](https://readyapi.khulnasoft.com/img/index/index-03-swagger-02.png)](https://github.com/khulnasoft/full-stack-readyapi-couchbase)
 
 ## Features
 
@@ -52,14 +52,14 @@ Generate a backend and frontend stack using Python, including interactive API do
 * Docker Swarm Mode deployment.
 * **Docker Compose** integration and optimization for local development.
 * **Production ready** Python web server using Uvicorn and Gunicorn.
-* Python **[FastAPI](https://github.com/tiangolo/fastapi)** backend:
+* Python **[ReadyAPI](https://github.com/khulnasoft/readyapi)** backend:
     * **Fast**: Very high performance, on par with **NodeJS** and **Go** (thanks to Starlette and Pydantic).
     * **Intuitive**: Great editor support. <abbr title="also known as auto-complete, autocompletion, IntelliSense">Completion</abbr> everywhere. Less time debugging.
     * **Easy**: Designed to be easy to use and learn. Less time reading docs.
     * **Short**: Minimize code duplication. Multiple features from each parameter declaration.
     * **Robust**: Get production-ready code. With automatic interactive documentation.
     * **Standards-based**: Based on (and fully compatible with) the open standards for APIs: <a href="https://github.com/OAI/OpenAPI-Specification" target="_blank">OpenAPI</a> and <a href="http://json-schema.org/" target="_blank">JSON Schema</a>.
-    * [**Many other features**](https://github.com/tiangolo/fastapi) including automatic validation, serialization, interactive documentation, authentication with OAuth2 JWT tokens, etc.
+    * [**Many other features**](https://github.com/khulnasoft/readyapi) including automatic validation, serialization, interactive documentation, authentication with OAuth2 JWT tokens, etc.
 * **Secure password** hashing by default.
 * **JWT token** authentication.
 * **CORS** (Cross Origin Resource Sharing).
@@ -99,7 +99,7 @@ Go to the directory where you want to create your project and run:
 
 ```bash
 pip install cookiecutter
-cookiecutter https://github.com/tiangolo/full-stack-fastapi-couchbase
+cookiecutter https://github.com/khulnasoft/full-stack-readyapi-couchbase
 ```
 
 ### Generate passwords
@@ -172,24 +172,24 @@ After using this generator, your new project (the directory created) will contai
 
 ## Sibling project generators
 
-* Based on PostgreSQL: [https://github.com/tiangolo/full-stack-fastapi-postgresql](https://github.com/tiangolo/full-stack-fastapi-postgresql).
+* Based on PostgreSQL: [https://github.com/khulnasoft/full-stack-readyapi-postgresql](https://github.com/khulnasoft/full-stack-readyapi-postgresql).
 
 ## Release Notes
 
 ### Latest Changes
 
-* Fix Windows line endings for shell scripts after project generation with Cookiecutter hooks. PR [#28](https://github.com/tiangolo/full-stack-fastapi-couchbase/pull/28).
+* Fix Windows line endings for shell scripts after project generation with Cookiecutter hooks. PR [#28](https://github.com/khulnasoft/full-stack-readyapi-couchbase/pull/28).
 * Remove `package-lock.json` to let everyone lock their own versions (depending on OS, etc).
-* Simplify Traefik labels for services. PR [#27](https://github.com/tiangolo/full-stack-fastapi-couchbase/pull/27).
-* Fix Flower Docker configuration. PR [#24](https://github.com/tiangolo/full-stack-fastapi-couchbase/pull/24).
+* Simplify Traefik labels for services. PR [#27](https://github.com/khulnasoft/full-stack-readyapi-couchbase/pull/27).
+* Fix Flower Docker configuration. PR [#24](https://github.com/khulnasoft/full-stack-readyapi-couchbase/pull/24).
 * Update testing scripts and typo.
-* Add normal user Pytest fixture. PR [#23](https://github.com/tiangolo/full-stack-fastapi-couchbase/pull/23).
-* Update Dockerfiles to use Couchbase from Debian image. PR [#20](https://github.com/tiangolo/full-stack-fastapi-couchbase/pull/20) by [@Gjacquenot](https://github.com/Gjacquenot).
-* Use new Pydantic types. PR [#21](https://github.com/tiangolo/full-stack-fastapi-couchbase/pull/21) by [@tehtbl](https://github.com/tehtbl).
+* Add normal user Pytest fixture. PR [#23](https://github.com/khulnasoft/full-stack-readyapi-couchbase/pull/23).
+* Update Dockerfiles to use Couchbase from Debian image. PR [#20](https://github.com/khulnasoft/full-stack-readyapi-couchbase/pull/20) by [@Gjacquenot](https://github.com/Gjacquenot).
+* Use new Pydantic types. PR [#21](https://github.com/khulnasoft/full-stack-readyapi-couchbase/pull/21) by [@tehtbl](https://github.com/tehtbl).
 
 ### 0.4.0
 
-* Fix security on resetting a password. Receive `password` and `token` as body, not query. PR [#16](https://github.com/tiangolo/full-stack-fastapi-couchbase/pull/16).
+* Fix security on resetting a password. Receive `password` and `token` as body, not query. PR [#16](https://github.com/khulnasoft/full-stack-readyapi-couchbase/pull/16).
 
 * Forward arguments from script to `pytest` inside container.
 
@@ -197,7 +197,7 @@ After using this generator, your new project (the directory created) will contai
 
 ### 0.3.0
 
-* PR <a href="https://github.com/tiangolo/full-stack-fastapi-couchbase/pull/15" target="_blank">#15</a>:
+* PR <a href="https://github.com/khulnasoft/full-stack-readyapi-couchbase/pull/15" target="_blank">#15</a>:
     * Update CRUD utils to use types better.
     * Simplify Pydantic model names, from `UserInCreate` to `UserCreate`, etc.
     * Upgrade packages.
@@ -210,7 +210,7 @@ After using this generator, your new project (the directory created) will contai
 
 ### 0.2.1
 
-* Fix frontend hijacking /docs in development. Using latest https://github.com/tiangolo/node-frontend with custom Nginx configs in frontend. <a href="https://github.com/tiangolo/full-stack-fastapi-couchbase/pull/14" target="_blank">PR #14</a>.
+* Fix frontend hijacking /docs in development. Using latest https://github.com/tiangolo/node-frontend with custom Nginx configs in frontend. <a href="https://github.com/khulnasoft/full-stack-readyapi-couchbase/pull/14" target="_blank">PR #14</a>.
 
 * Update generated README. Minor typos.
 
@@ -220,7 +220,7 @@ After using this generator, your new project (the directory created) will contai
 
 ### 0.2.0
 
-**<a href="https://github.com/tiangolo/full-stack-fastapi-couchbase/pull/7" target="_blank">PR #7</a>**:
+**<a href="https://github.com/khulnasoft/full-stack-readyapi-couchbase/pull/7" target="_blank">PR #7</a>**:
 
 * Simplify and update backend `Dockerfile`s.
 * Refactor and simplify backend code, improve naming, imports, modules and "namespaces".
@@ -228,7 +228,7 @@ After using this generator, your new project (the directory created) will contai
 * Standardize frontend components layout, buttons order, etc.
 * Add local development scripts (to develop this project generator itself).
 * Add logs to startup modules to detect errors early.
-* Improve FastAPI dependency utilities, to simplify and reduce code (to require a superuser).
+* Improve ReadyAPI dependency utilities, to simplify and reduce code (to require a superuser).
 * Fix/update logic to update users.
 
 ## License

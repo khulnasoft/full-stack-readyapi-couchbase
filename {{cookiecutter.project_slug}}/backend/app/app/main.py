@@ -1,10 +1,10 @@
-from fastapi import FastAPI
+from readyapi import ReadyAPI
 from starlette.middleware.cors import CORSMiddleware
 
 from app.api.api_v1.api import api_router
 from app.core import config
 
-app = FastAPI(title=config.PROJECT_NAME, openapi_url="/api/v1/openapi.json")
+app = ReadyAPI(title=config.PROJECT_NAME, openapi_url="/api/v1/openapi.json")
 
 # CORS
 origins = []

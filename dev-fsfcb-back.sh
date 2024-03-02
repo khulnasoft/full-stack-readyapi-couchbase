@@ -10,8 +10,8 @@ if [ $(uname -s) = "Linux" ]; then
     sudo find ./dev-fsfcb/ -type d -name __pycache__ -exec rm -r {} \+
 fi
 
-rm -rf ./full-stack-fastapi-couchbase/\{\{cookiecutter.project_slug\}\}/*
+rm -rf ./full-stack-readyapi-couchbase/\{\{cookiecutter.project_slug\}\}/*
 
-rsync -a --exclude=node_modules ./dev-fsfcb/* ./full-stack-fastapi-couchbase/\{\{cookiecutter.project_slug\}\}/
+rsync -a --exclude=node_modules ./dev-fsfcb/* ./full-stack-readyapi-couchbase/\{\{cookiecutter.project_slug\}\}/
 
-rsync -a ./dev-fsfcb/{.env,.gitignore,.gitlab-ci.yml} ./full-stack-fastapi-couchbase/\{\{cookiecutter.project_slug\}\}/
+rsync -a ./dev-fsfcb/{.env,.gitignore,.gitlab-ci.yml} ./full-stack-readyapi-couchbase/\{\{cookiecutter.project_slug\}\}/

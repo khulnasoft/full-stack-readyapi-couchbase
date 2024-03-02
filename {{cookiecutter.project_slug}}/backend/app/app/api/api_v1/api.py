@@ -1,4 +1,4 @@
-from fastapi import APIRouter
+from readyapi import APIRouter
 
 from app.api.api_v1.endpoints import items, login, roles, users, utils
 

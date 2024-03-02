@@ -5,7 +5,7 @@ from typing import List, Optional, Sequence, Type, TypeVar, Union
 from couchbase.bucket import Bucket
 from couchbase.fulltext import MatchAllQuery, QueryStringQuery
 from couchbase.n1ql import CONSISTENCY_REQUEST, N1QLQuery
-from fastapi.encoders import jsonable_encoder
+from readyapi.encoders import jsonable_encoder
 from pydantic import BaseModel
 from pydantic.fields import Field, SHAPE_LIST, SHAPE_SET, SHAPE_TUPLE
 

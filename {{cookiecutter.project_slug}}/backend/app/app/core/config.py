@@ -21,7 +21,7 @@ SERVER_NAME = os.getenv("SERVER_NAME")
 SERVER_HOST = os.getenv("SERVER_HOST")
 BACKEND_CORS_ORIGINS = os.getenv(
     "BACKEND_CORS_ORIGINS"
-)  # a string of origins separated by commas, e.g: "http://localhost, http://localhost:4200, http://localhost:3000, http://localhost:8080, http://dev.couchbase-project.com, https://stag.couchbase-project.com, https://couchbase-project.com, http://local.dockertoolbox.tiangolo.com"
+)  # a string of origins separated by commas, e.g: "http://localhost, http://localhost:4200, http://localhost:3000, http://localhost:8080, http://dev.couchbase-project.com, https://stag.couchbase-project.com, https://couchbase-project.com, http://local.dockertoolbox.khulnasoft.com"
 PROJECT_NAME = os.getenv("PROJECT_NAME")
 SENTRY_DSN = os.getenv("SENTRY_DSN")
 
@@ -51,7 +51,7 @@ COUCHBASE_N1QL_TIMEOUT_SECS = 300.0
 
 # Couchbase Sync Gateway settings
 COUCHBASE_CORS_ORIGINS = os.getenv("COUCHBASE_CORS_ORIGINS")
-# a string of origins separated by commas, e.g: "http://localhost:5984, http://localhost, http://localhost:4200, http://localhost:3000, http://localhost:8080, http://dev.couchbase-project.com, https://stag.couchbase-project.com, https://db.stag.couchbase-project.com, https://couchbase-project.com, https://db.couchbase-project.com, http://local.dockertoolbox.tiangolo.com, http://local.dockertoolbox.tiangolo.com:5984"
+# a string of origins separated by commas, e.g: "http://localhost:5984, http://localhost, http://localhost:4200, http://localhost:3000, http://localhost:8080, http://dev.couchbase-project.com, https://stag.couchbase-project.com, https://db.stag.couchbase-project.com, https://couchbase-project.com, https://db.couchbase-project.com, http://local.dockertoolbox.khulnasoft.com, http://local.dockertoolbox.khulnasoft.com:5984"
 COUCHBASE_AUTH_TIMEOUT = ACCESS_TOKEN_EXPIRE_MINUTES * 60
 
 COUCHBASE_FULL_TEXT_INDEX_DEFINITIONS_DIR = "/app/app/search_index_definitions/"

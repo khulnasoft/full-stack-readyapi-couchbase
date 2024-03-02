@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Depends
+from readyapi import APIRouter, Depends
 
 from app import crud
 from app.api.utils.security import get_current_active_superuser

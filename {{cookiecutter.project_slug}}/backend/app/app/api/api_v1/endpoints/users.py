@@ -1,6 +1,6 @@
 from typing import List
 
-from fastapi import APIRouter, Body, Depends, HTTPException
+from readyapi import APIRouter, Body, Depends, HTTPException
 from pydantic.networks import EmailStr
 
 from app import crud
